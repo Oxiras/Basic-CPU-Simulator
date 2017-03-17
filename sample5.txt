@@ -1,0 +1,46 @@
+	// Load characters
+.0
+1	// Load 9 into AC
+9
+14	// Copy to X
+4	// Load value at addr + X to AC
+499
+27	// Push AC to stack
+26	// Decr X
+15	// Copy X to AC
+22	// JumpNotEqual 3
+3
+
+	// Print characters
+.100
+1	// Load 9 into AC
+9
+14	// Copy to X
+28	// Pop from stack
+26	// Decr X
+9	// Put 2
+2
+15	// Copy from X
+22	// JumpNotEqual 103
+103
+1	// Print newline
+10
+9	// Put 2
+2
+50	// End
+
+	// Character area
+.500	
+77
+79
+85
+83
+84
+65
+80
+72
+65
+
+	// Timer interrupt - return
+.1000	
+30
